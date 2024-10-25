@@ -50,8 +50,12 @@ def main():
 	if turns % 3 == 0: 
 		replenish_resources() 
 
-def display_status(): 
-# TODO: Implement function to display ship status, resources, and crew 
+def display_status():
+	print ("Ship Status:") 
+	print (ship["systems"])
+	print (ship["resources"])
+	print (ship["crew"])
+
 
 def get_user_action(): 
 # TODO: Implement function to get and return user's chosen action 
@@ -77,5 +81,8 @@ def use_resource(resource, amount):
 
 def replenish_resources(): 
 # TODO: Implement resource replenishment logic 
+
+
+
 
 main()
